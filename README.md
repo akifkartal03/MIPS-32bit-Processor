@@ -18,6 +18,6 @@
 
 #### The R-type instructions will execute different than the conventional MIPS. This is why they have ‘n’ at the end (representing new).
 
-### Check for more detail [Assignment4](https://github.com/akifkartal03/CSE331-Computer-Organization/blob/master/HW4-MIPS%2032bit%20Processor/Assignment4.pdf).
+### Check for more detail [Assignment4](https://github.com/akifkartal03/MIPS-32bit-Processor/blob/master/Assignment4.pdf).
 
-### Check my [Report](https://github.com/akifkartal03/CSE331-Computer-Organization/blob/master/HW4-MIPS%2032bit%20Processor/Report_hw4.pdf) in order to see implementation details.
+### Check my [Report](https://github.com/akifkartal03/MIPS-32bit-Processor/blob/master/source/Report_hw4.pdf) in order to see implementation details.
