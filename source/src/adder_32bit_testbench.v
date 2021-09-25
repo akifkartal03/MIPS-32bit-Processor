@@ -1,0 +1,25 @@
+module adder_32bit_testbench();
+	reg signed [31:0] a;
+	reg signed [31:0] b;
+	wire signed [31:0] result;
+	reg carry_in;
+	wire carry_out;
+	adder_32bit adder(result, carry_out, a, b, carry_in);
+	initial begin
+	a = 32'b00000000000000000000000000100101; b =32'b00000000000000000000000000111111; carry_in = 1'b0;
+	#20;
+	a = 32'b00000000000000000000000010011000; b =32'b00000000000000000000000000111111; carry_in = 1'b0;
+	#20;
+	a = 32'b11111111111111111111111111110110; b =32'b11111111111111111111111111101001; carry_in = 1'b0;
+	#20;
+	a = 32'b11111111111111111111001000010011; b =32'b00000000000000000000000000111111; carry_in = 1'b0;
+	#20;
+	a = 32'b00000000000000000000000000000000; b =32'b00000000000000000000000000000000; carry_in = 1'b0;
+	#20;
+	a = 32'b11111111111111111111001000010011; b =32'b00000000000000000000000000000000; carry_in = 1'b0;
+	#20;
+	end
+	initial begin
+	$monitor("time=%2d, a=%2d, b=%2d, carry_in=%1b, carry_out=%1b, result=%2d",$time,a,b,carry_in,carry_out,result);
+	end
+endmodule
